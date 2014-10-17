@@ -16,9 +16,9 @@ if [ $TRAVIS_PULL_REQUEST == 'false' ]; then
   kill -9 $!
 else
   echo "Pull request, executing E2E script..."
-  ./scripts/e2e-run.sh
+  ./test/e2e-run.sh
 fi
 else
   echo "No deployment necessary, executing E2E script..."
-  ./scripts/e2e-run.sh
+  ./test/e2e-run.sh
 fi
